@@ -1,0 +1,114 @@
+/* Laba diena */
+#container {
+	position: relative;
+	height: 500px;
+	width: 500px;
+	background-color: #ff99c8;
+	margin: 200px;
+}
+
+.pirmas,
+.antras,
+.trecias {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	opacity: 0.8;
+	position: absolute;
+	top: calc(50% - 125px);
+	left: calc(50% - 125px);
+}
+
+.pirmas {
+	background-color: #fcf6bd;
+	border: solid 5px #e4c1f9;
+	animation: anim1 5s infinite ease-in-out;
+}
+@keyframes anim1 {
+	0% {
+		left: 125px;
+		top: -250px;
+	}
+
+	50% {
+		left: 125px;
+		top: 125px;
+	}
+	75% {
+		left: 125px;
+		top: 0px;
+	}
+	100% {
+		left: 125px;
+		top: -250px;
+	}
+}
+.antras {
+	background-color: #d0f4de;
+	border: solid 5px #e4c1f9;
+	animation: anim2 5s infinite ease-out;
+}
+@keyframes anim2 {
+	0% {
+		left: -250px;
+		bottom: 125px;
+	}
+	50% {
+		left: 125px;
+		bottom: 125px;
+	}
+	75% {
+		left: 0px;
+		bottom: 125px;
+	}
+	100% {
+		left: -250px;
+	}
+}
+
+.trecias {
+	background-color: #a9def9;
+	border: solid 5px #e9ff70;
+	animation: anim3 5s infinite ease;
+}
+@keyframes anim3 {
+	0% {
+		left: 500px;
+		bottom: 125px;
+	}
+	50% {
+		left: 125px;
+		bottom: 125px;
+	}
+	75% {
+		left: 250px;
+		bottom: 125px;
+	}
+	100% {
+		left: 500px;
+		bottom: 125px;
+	}
+}
+/* .antras {
+	background-color: #d0f4de;
+	border: solid 5px #e4c1f9;
+	animation: animacija2 5s infinite ease-out;
+}
+@keyframes animacija2 {
+	0% {
+		left: 125px;
+		bottom: -250px;
+	}
+	50% {
+		left: 125px;
+		bottom: 125px;
+	}
+	75% {
+		left: 125px;
+		bottom: 0px;
+	}
+	100% {
+		left: 125px;
+		bottom: -250px;
+	}
+} */
